@@ -11,7 +11,7 @@ function! LiveServer(action)
     " Starts live-server in a new buffer in the background.
     if a:action == "start"
         tabe 
-        term live-server
+        term npx live-server
         tabclose
         echo "Started a new live-server (npm) instance."
 
